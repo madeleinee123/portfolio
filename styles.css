@@ -101,8 +101,6 @@ ul {
     grid-column: 8;
     background: #137D86;
 }
-li {padding-top: 5%;
-}
 a{
     display:block;
     height:25vw;
@@ -127,7 +125,12 @@ a{
 }
 /*projects page*/
 #projects{
-
+    width: 75vw;
+    margin: 100pt;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 .projects {
     height: 50vw;
@@ -135,25 +138,37 @@ a{
     grid-template-rows: 1fr;
     grid-template-columns: 16% 16% 16% 16% 16% 16%;
 }
+.proj_header{
+    margin-bottom:0pt;
+}
 .proj_a{
-    width: 250px;
-    height: 250px;
     text-align: right;
     grid-row:1;
     grid-column: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
 }
 .proj_a_pic{
     width: 250px;
     height: 250px;
     grid-row: 1;
     grid-column: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .proj_b{
-    width: 250px;
-    height: 250px;
     text-align: right;
     grid-row:1;
     grid-column: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 .proj_b_pic{
     width: 250px;
@@ -162,15 +177,22 @@ a{
     grid-column: 4;
 }
 .proj_c{
-    width: 250px;
-    height: 250px;
     text-align: right;
     grid-row: 1;
     grid-column: 5;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 .proj_c_pic{
     width: 250px;
     height: 250px;
     grid-row: 1;
     grid-column: 6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
