@@ -3,52 +3,56 @@ body {
     font-family: Palatino, serif;
 }
 header{
-    font-size: 60pt;
+    font-size: 7.5vw;
 }
 section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .home{
-    height: 50vw;
-    display:flex;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 }
 /*about page*/
 #about{
-    width: 75vw;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    margin: 200pt;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
+}
+#about header{
+    display:flex;
+    width:75vw;
     align-items: flex-start;
 }
 #info{
-    display:grid;
+    width: 75vw;
+    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 .about_para{
     grid-row: 1;
     grid-column: 1 / span 2;
-    font-size: 20pt;
+    font-size: 2.2vw;
 }
 .me_img{
-    height:15vw;
-    width:15vw;
-    margin-left: 50pt;
+    height: 25vw;
+    width: 25vw;
     grid-row: 1;
     grid-column: 3;
 }
 /*navigation bar*/
-ul {
+nav ul{
     width: 100vw;
-    height: 25vw;
+    height: 50vh;
     list-style-type: none;
     font-size: 30pt;
     margin: 0;
@@ -56,6 +60,10 @@ ul {
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+li{
+    text-align: center;
+    font-size: 3.5vw;
 }
 .red{
     grid-row: 1;
@@ -71,25 +79,21 @@ ul {
     grid-row: 1;
     grid-column: 3;
     background:#D49B1D;
-    text-align: center;
 }
  .yellow{
     grid-row: 1;
     grid-column: 4;
     background: #E2E28C;
-    text-align: center;
 }
 .green{
     grid-row: 1;
     grid-column: 5;
     background:#79CC93;
-    text-align: center;
 }
 .lightblue{
     grid-row: 1;
     grid-column: 6;
     background:#54D3F1;
-    text-align: center;
 }
 .medblue{
     grid-row: 1;
@@ -103,66 +107,76 @@ ul {
 }
 a{
     display:block;
-    height:25vw;
+    height:50vh;
     text-decoration: none;
     color: black;
 }
+a:hover{
+    color: #FBF9CD;
+}
 .gold:hover{
     background: #926b14;
-    color: #FBF9CD;
 }
 .yellow:hover{
     background: #888854;
-    color: #FBF9CD;
 }
 .green:hover{
     background: #4c805c;
-    color: #FBF9CD;
 }
 .lightblue:hover{
     background: #2b6775;
-    color: #FBF9CD;
 }
-/*projects page*/
+/*projects*/
 #projects{
-    width: 75vw;
-    margin: 100pt;
+    width: 100vw;
+    height: 100vh;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 }
 .projects {
-    height: 50vw;
+    height: 50vh;
+    width: 75vw;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#projects header {
+    display: flex;
+    width: 75vw;
+    justify-content: flex-end;
+    align-items: center;
 }
 .proj_header{
     margin-bottom:0pt;
 }
 .proj_a{
     text-align: right;
+    font-size: 1.25vw;
+    width: 13vw;
+    height: 13vw;
     grid-row:1;
-    grid-column: 1;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-
-}
-.proj_a_pic{
-    width: 150px;
-    height: 150px;
-    grid-row: 1;
-    grid-column: 2;
+    grid-column: 1.5;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.proj_a_pic{
+    width: 13vw;
+    height: 13vw;
+    padding: 0 1vw 0 1vw;
+    grid-row: 1;
+    grid-column: 2;
+
 }
 .proj_b{
     text-align: right;
+    font-size: 1.25vw;
+    width: 13vw;
+    height: 13vw;
     grid-row:1;
     grid-column: 3;
     display:flex;
@@ -171,13 +185,17 @@ a{
     align-items: flex-end;
 }
 .proj_b_pic{
-    width: 150px;
-    height: 150px;
+    width: 13vw;
+    height: 13vw;
+    padding: 0 1vw 0 1vw;
     grid-row: 1;
     grid-column: 4;
 }
 .proj_c{
     text-align: right;
+    font-size: 1.25vw;
+    width: 13vw;
+    height: 13vw;
     grid-row: 1;
     grid-column: 5;
     display:flex;
@@ -186,13 +204,10 @@ a{
     align-items: flex-end;
 }
 .proj_c_pic{
-    width: 150px;
-    height: 150px;
+    width: 13vw;
+    height: 13vw;
+    padding: 0 1vw 0 1vw;
     grid-row: 1;
     grid-column: 6;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
