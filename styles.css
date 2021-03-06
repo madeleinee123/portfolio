@@ -132,17 +132,18 @@ a:hover{
     height: 100vh;
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .projects {
     height: 50vh;
     width: 75vw;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #projects header {
+    margin-bottom: 1vh;
     display: flex;
     width: 75vw;
     justify-content: flex-end;
@@ -154,60 +155,70 @@ a:hover{
 .proj_a{
     text-align: right;
     font-size: 1.25vw;
-    width: 13vw;
-    height: 13vw;
+    width: 24vw;
+    height: 25vh;
+    padding-right:1vw;
     grid-row:1;
-    grid-column: 1.5;
+    grid-column: 1;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
 }
-.proj_a_pic{
+.proj_pic{
     width: 13vw;
     height: 13vw;
     padding: 0 1vw 0 1vw;
-    grid-row: 1;
-    grid-column: 2;
-
+}
+.proj_a_pic{
+    grid-row: 2;
+    grid-column: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 .proj_b{
     text-align: right;
     font-size: 1.25vw;
-    width: 13vw;
-    height: 13vw;
+    width: 24vw;
+    height: 25vh;
+    padding-right:1vw;
     grid-row:1;
-    grid-column: 3;
+    grid-column: 2;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
 }
 .proj_b_pic{
-    width: 13vw;
-    height: 13vw;
-    padding: 0 1vw 0 1vw;
-    grid-row: 1;
-    grid-column: 4;
+    grid-row: 2;
+    grid-column: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 .proj_c{
     text-align: right;
     font-size: 1.25vw;
-    width: 13vw;
-    height: 13vw;
+    width: 24vw;
+    height: 25vh;
+    padding-right:1vw:
     grid-row: 1;
-    grid-column: 5;
+    grid-column: 3;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
 }
 .proj_c_pic{
-    width: 13vw;
-    height: 13vw;
-    padding: 0 1vw 0 1vw;
-    grid-row: 1;
-    grid-column: 6;
+    grid-row: 2;
+    grid-column: 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
