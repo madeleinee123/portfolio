@@ -5,7 +5,6 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 let sticky = navbar.offsetTop;
 
 function myFunction() {
-    console.log(vh);
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
     } else {
@@ -22,5 +21,11 @@ function myFunction() {
         }
     } else{
         navbar.style.height = "8vh";
+    }
+    if (document.documentElement.scrollTop >= (5)){
+        document.getElementById("footer").style.visibility = "visible";
+    }
+    if (document.documentElement.scrollTop < (5)){
+        document.getElementById("footer").style.visibility = "hidden";
     }
 }

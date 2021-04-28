@@ -2,7 +2,7 @@ body {
     background: #FBF9CD;
     font-family: Palatino, serif;
     margin: 0px;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 header{
     font-size: 7.5vw;
@@ -126,16 +126,16 @@ a{
 a:hover{
     color: #FBF9CD;
 }
-.gold:hover{
+#navbar .gold:hover{
     background: #926b14;
 }
-.yellow:hover{
+#navbar .yellow:hover{
     background: #888854;
 }
-.green:hover{
+#navbar .green:hover{
     background: #4c805c;
 }
-.lightblue:hover {
+#navbar .lightblue:hover {
     background: #2b6775;
 }
 /*footer*/
@@ -154,6 +154,7 @@ footer ul{
     left: 0;
     bottom: 0;
     width: 100%;
+    visibility: hidden;
 }
 /*projects*/
 #projects{
