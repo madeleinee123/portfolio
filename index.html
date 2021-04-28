@@ -11,18 +11,30 @@
 <body>
     <section class="home">
         <header>madeleine emmons</header>
-        <nav>
+        <nav id="navbar">
             <ul>
                 <li class="red"></li>
                 <li class="orange"></li>
-                <li class="gold"><a  href="#about">about</a></li>
+                <li class="gold"><a href="#about">about</a></li>
                 <li class="yellow"><a href="#projects">projects</a></li>
-                <li class="green">links</li>
+                <li class="green"><a href="#links">links</a></li>
                 <li class="lightblue">contact</li>
                 <li class="medblue"></li>
                 <li class="darkblue"></li>
             </ul>
         </nav>
+        <footer id="footer">
+            <ul>
+                <li class="red"></li>
+                <li class="orange"></li>
+                <li class="gold"></li>
+                <li class="yellow"></li>
+                <li class="green"></li>
+                <li class="lightblue"></li>
+                <li class="medblue"></li>
+                <li class="darkblue"></li>
+            </ul>
+        </footer>
     </section>
 
     <section id ="about">
@@ -42,40 +54,40 @@
     <section id ="projects">
         <header>projects.</header>
         <div class="projects">
-            <section class ="proj_a">
+            <div class ="proj_a">
                 <h4 class="proj_header">growing a cat</h4>
                 <p>
                     for her graduation madeleine received one whole kitten. his name is beauregard and
                     he is a ball of energy.  madeleine has grown him into a very handsome boy.
                 </p>
-            </section>
+            </div>
             <div class="proj_a_pic">
                 <img class = "proj_pic" src="images/beau.jpeg"
                 alt="Cat in a Hammock: a chocolate brown cat with green eyes lounging in a pick hammock.">
             </div>
 
-            <section class="proj_b">
+            <div class="proj_b">
                 <h4  class="proj_header">growing a leo</h4>
                 <p>
                     during her junior year madeleine bought a leopard gecko and named him indiana.
                     this project is ongoing and she recently upgraded his tank to a 20 gallon tank
                     instead of ten.
                 </p>
-            </section>
+            </div>
             <div class="proj_b_pic">
                 <img class="proj_pic" src="images/indiana.jpeg"
                 alt="Leopard Gecko: a leopard gecko inside a glass tank peering out of his hide with a green
                 plastic plant next to him.">
             </div>
 
-            <section class="proj_c">
+            <div class="proj_c">
                 <h4 class="proj_header">css grid art</h4>
                 <p>
                     upon learning css grid, madeleine created a replication of <em>composition with
                     red blue and yellow</em> by piet mondrian. she sent a photo to her father and
                     he applauded her hard work.
                 </p>
-            </section>
+            </div>
             <div class="proj_c_pic">
                 <img class="proj_pic" src="images/squares.jpeg"
                 alt="Digital Rendering of Art: a picture of a computer screen showing copy of composition
@@ -84,15 +96,19 @@
             </div>
         </div>
     </section>
-<!--&lt;!&ndash;    <section id="links">&ndash;&gt;-->
-<!--&lt;!&ndash;        <header>links.</header>&ndash;&gt;-->
-<!--&lt;!&ndash;            <ul>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="github">github</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="linkedin">linkedin</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="resume">my resume</li>&ndash;&gt;-->
-<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;    </section>&ndash;&gt;-->
 
+    <section id="links">
+        <header>links.</header>
+        <div class = "icons">
+            <a href="https://github.com/madeleinee123" target="_blank">
+                <img id="git_pic" class="proj_pic" src="images/github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/madeleine-emmons-978001176/" target="_blank">
+                <img id="linkedin_pic" class="proj_pic" src = "images/linkedin.png">
+            </a>
+        </div>
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
