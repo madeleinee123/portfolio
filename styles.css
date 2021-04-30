@@ -1,7 +1,7 @@
 body {
     background: #FBF9CD;
     font-family: Palatino, serif;
-    margin: 0px;
+    margin: 0;
     overflow-y: hidden;
 }
 header{
@@ -167,7 +167,7 @@ footer ul{
     align-items: center;
 }
 .projects {
-    height: 50vh;
+    height: 75vh;
     width: 75vw;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -178,7 +178,7 @@ footer ul{
     display: flex;
     width: 75vw;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 .proj_header{
     margin-bottom:0;
@@ -193,7 +193,7 @@ footer ul{
     grid-column: 1;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 
 }
@@ -207,8 +207,8 @@ footer ul{
     grid-column: 1;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 .proj_b{
     text-align: left;
@@ -220,7 +220,7 @@ footer ul{
     grid-column: 2;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .proj_b_pic{
@@ -228,8 +228,8 @@ footer ul{
     grid-column: 2;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 .proj_c{
     text-align: left;
@@ -241,7 +241,7 @@ footer ul{
     grid-column: 3;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .proj_c_pic{
@@ -249,8 +249,8 @@ footer ul{
     grid-column: 3;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 /*links*/
 #links{
@@ -287,14 +287,13 @@ footer ul{
     align-items: center;
 }
 /*email link*/
-#links a:link {
+#links a:link, #projects a:link {
     color: #00989E;
     background-color: transparent;
     text-decoration: none;
 }
 
-
-#links a:hover {
+#links a:hover, #projects a:hover {
     color: #2b6775;
     background-color: transparent;
     text-decoration: underline;
