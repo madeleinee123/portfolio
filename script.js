@@ -14,13 +14,13 @@ function myFunction() {
         navbar.style.height = "50vh";
     } else if (document.documentElement.scrollTop <= vh){
         let newH = ((100 -(((vh/2 - document.documentElement.scrollTop)/vh)*-100))- 50);
-        if (newH > 8){
+        if (newH > 10){
             navbar.style.height = newH + "vh";
         }else{
-            navbar.style.height = "8vh";
+            navbar.style.height = "10vh";
         }
     } else{
-        navbar.style.height = "8vh";
+        navbar.style.height = "10vh";
     }
     if (document.documentElement.scrollTop >= (5)){
         document.getElementById("footer").style.visibility = "visible";
